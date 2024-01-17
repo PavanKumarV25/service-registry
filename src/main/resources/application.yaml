@@ -1,0 +1,13 @@
+server:
+  port : 8761
+
+
+springdoc:
+   api-docs:
+      path=/api-docs
+eureka:
+  instance:
+    hostname: "${HOSTNAME:localhost}.eureka"
+  client:
+    register-with-eureka: false
+    fetch-registry : false
